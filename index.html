@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon-32x32.png">
+    <!-- fonts -->
+    <!-- Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/css1.css">  
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!-- js files -->
+    <script src="assets/js/main.js"></script>
+    <title>이현지 포트폴리오</title>
+</head>
+<body> 
+    
+    <div id="nav">
+        <a id="logo" class="rotate" href="#cont-1">HZ</a>
+        <a href="#cont-2">about</a>  
+        <a href="#cont-3">projects</a>
+    </div>   
+    <div id="loading-cont">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <div id="cont-1" class="cont">
+        <video id="bgr-video" src="assets/video/배경.mp4" loop autoplay muted></video>
+        <div id="cont-1-bg-div"></div>
+        <p id="title">HZ's portfolio</p>
+        <div id="contacts"><a href="https://open.kakao.com/o/swseI55e" target="_blank">kakao talk</a> <a href="mailto: rolypolytoyy@gmail.com">mail</a></div>
+        <p id="intro-txt">안녕하세요. 기록과 기본에 충실한 신입 개발자 이현지입니다.</p>
+        <div id="gnb-cont">
+            <a href="https://cinnamonlover.tistory.com/" target="_blank">Blog</a>&nbsp;&nbsp;
+            <a href="https://github.com/leehz123" target="_blank">GitHub</a>
+        </div>
+        <div class="scroll-trigger"></div>
+        <a id="scroll-down-mark" href="#cont-2"><span></span>scroll</a>    
+    </div>
+
+    <div id="cont-2" class="cont">
+        <div id="cont-2-bg-div"></div>
+        <div class="scroll-trigger"></div>
+        <div id="history" class="about">
+            <h1>Education</h1>
+            <p>
+                <span>2019.02.15</span><br>
+                서울여자대학교 영어영문학과 졸업<br>
+            </p>
+            <br>
+            <h1>Academy</h1>
+            <p>
+                <span>2022.04.12 ~ 2022.09.27</span><br>
+                이젠아카데미 [디지털컨버전스] 클라우드(AWS)기반<br>백엔드 개발(JAVA프로그래머) 수료<br>
+            </p>
+        </div>
+        <div id="cert-stack" class="about">
+            <div id="certs">
+                <h1>Certificates</h1>
+                <p>정보처리기사, 컴퓨터활용능력 1급</p>
+            </div>
+            <div id="stacks">
+                <h1>Tech-Stack</h1>
+                <div class="front stack-group">
+                    <p>Front-end</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>                            
+                <div class="back stack-group">
+                    <p>Back-end</p>
+                    <ul>
+                        <li>JAVA</li>
+                        <li>JSP</li>
+                        <li>Eclipse</li>
+                        <li>Spring</li>
+                        <li>Apache-Tomcat</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+                <div class="db stack-group">
+                    <p>Database</p>
+                    <ul>
+                        <li>Oracle</li>
+                        <li>SQL Developer</li>
+                    </ul>
+                </div>
+                <div class="vc stack-group">
+                    <p>Version control</p>
+                    <ul>
+                        <li>Git</li>
+                        <li>Git Hub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cont-3" class="cont">
+        <div class="scroll-trigger"></div>
+        <div class="card-cont">
+            <div class="flip">
+                <div class="card">
+                    <div class="card-front">
+                        <p>농산물 직거래 사이트</p>
+                        <h1>FarmOcean</h1>
+                        <p>
+                            [Spring MVC 프로젝트, AWS 배포]<br>
+                            <br>
+                            <b>팀원 수</b> 6 명<br>
+                            <b>프로젝트 진행기간</b> 2022.08.18 ~ 2022.09.27<br><br>
+                            <b>담당 페이지(Front & Back)</b>
+                        </p>
+                        <ul>
+                            <li>상품 목록</li>
+                            <li>상품 상세</li>
+                            <li>상품 후기 작성</li>
+                            <li>상품 등록</li>
+                            <li>상품 수정</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img id="farmocean-img" src="assets/image/팜오션.png" alt=""><br>
+                        <button id="farmocean-pdf-btn" class="pdf-btn card-btn">PDF 보기</button> <button class="card-btn" onclick="window.open('http://54.219.31.133/farmocean/')">사이트 링크</button> <button class="card-btn" onclick="window.open('https://github.com/leehz123/farmocean')">Gitub</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="card">
+                    <div class="card-front">
+                        <p>버스 예매 사이트</p>
+                        <h1>Bus Project</h1>
+                        <p>
+                            [Eclipse 자바 프로젝트]<br><br>
+                            <b>팀원 수</b> 5 명<br>
+                            <b>프로젝트 진행기간</b> 2022.06.10 ~ 2022.07.04<br><br>
+                            <b>담당 페이지(Front & Back)</b>
+                        </p>
+                        
+                        <ul>
+                            <li>내 정보 조회</li>
+                            <li>내 정보 수정</li>
+                            <li>예매내역 확인</li>
+                            <li>계정 탈퇴</li>
+                        </ul>
+                    </div>
+                    <div class="card-back">
+                        <img id="bus-img" src="assets/image/버스.png" alt=""><br>
+                        <button id="bus-pdf-btn" class="pdf-btn card-btn">PDF 보기</button> <button class="card-btn" onclick="window.open('https://github.com/leehz123/BusProject')">GitHub</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <object class="pdf" id="farmocean-pdf" type="application/pdf" data="assets/pdf/farmocean.pdf">
+            대체 콘텐츠입니다. 브라우저가 PDF 삽입을 지원하지 않거나 PDF 파일을 찾을 수 없습니다.
+            <a href="assets/pdf/farmocean.pdf">PDF 파일 다운로드</a>
+        </object>
+        <object class="pdf" id="bus-pdf" type="application/pdf" data="assets/pdf/bus.pdf">
+            대체 콘텐츠입니다. 브라우저가 PDF 삽입을 지원하지 않거나 PDF 파일을 찾을 수 없습니다.
+            <a href="assets/pdf/farmocean.pdf">PDF 파일 다운로드</a>
+        </object>
+    </div>
+    
+
+
+</body>
+</html>
